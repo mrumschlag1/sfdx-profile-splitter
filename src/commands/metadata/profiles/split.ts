@@ -55,7 +55,7 @@ export default class Split extends SfdxCommand {
                 if (fileName.includes('.profile')) {
                     this.ux.log(chalk.bold(chalk.black(('Splitting profile: ' + fileName))));
                     
-                    const dirRoot = location + '/' + fileName.replace('.profile-meta.xml', '');
+                    const dirRoot = location + '/' + fileName.replace('.profile-meta.xml', '').replace('.profile', '');
                     await fs.ensureDir(dirRoot);
     
                     const xml = await fs.readFile(root + '/' + fileName);

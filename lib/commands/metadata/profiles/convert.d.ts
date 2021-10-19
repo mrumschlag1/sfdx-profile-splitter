@@ -6,7 +6,7 @@ export default class Convert extends SfdxCommand {
         format: flags.IOptionFlag<string>;
         input: flags.IOptionFlag<string>;
         output: flags.IOptionFlag<string>;
-        delete: import("../../../../../../../../Users/RJ857MQ/projects/sfdx-profiles-splitter/node_modules/@salesforce/command/node_modules/@oclif/command/node_modules/@oclif/parser/lib/flags").IBooleanFlag<boolean>;
+        delete: import("../../../../../../../../Users/RJ857MQ/projects/sfdx-profile-splitter/node_modules/@salesforce/command/node_modules/@oclif/command/node_modules/@oclif/parser/lib/flags").IBooleanFlag<boolean>;
     };
     protected static requiresProject: boolean;
     convert(format: string, inputDir: string, outputDir: string, deleteProfile: boolean): Promise<any>;
